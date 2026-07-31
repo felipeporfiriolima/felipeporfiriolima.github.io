@@ -49,8 +49,7 @@
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
-                        Felipe
-                        <span class="text-primary">Porfirio</span>
+                        Felipe Porfirio
                     </h1>
 					<div class="subheading mb-4">
 						Senior Data Engineer
@@ -112,35 +111,82 @@
 				</div>
 			</section>
             <!-- Projects-->
-            <section class="resume-section" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Projects</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Databricks Sales Pipeline</h3>
+			<section class="resume-section" id="projects">
+				<div class="resume-section-content">
+			
+					<h2 class="mb-5">Projects</h2>
+			
+					<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+						<div class="flex-grow-1">
+			
+							<h3 class="mb-0">Databricks Sales Pipeline</h3>
 							<p>
-								End-to-end Data Engineering project built with Databricks, Apache Spark,
-								and Delta Lake. The solution implements a Medallion Architecture
-								(Bronze, Silver, and Gold layers) for data ingestion, transformation,
-								quality validation, and analytical modeling.
+								End-to-end Data Engineering project designed to build a scalable
+								sales data platform using Databricks, Apache Spark and Delta Lake.
+			
+								The solution follows the Medallion Architecture pattern
+								(Bronze, Silver and Gold layers), implementing data ingestion,
+								transformation, data quality validation and analytical modeling.
 							</p>
-							<h4>Technical Implementations</h4>
-							
+			
+							<h4>Architecture & Data Pipeline</h4>
+			
 							<ul>
-								<li>Medallion Architecture (Bronze, Silver, and Gold)</li>
-								<li>Delta Lake Storage</li>
-								<li>Incremental Data Processing</li>
-								<li>Data Quality Framework</li>
-								<li>Quarantine Pattern</li>
-								<li>Dimensional Modeling</li>
-								<li>Delta Table Optimization (OPTIMIZE)</li>
-								<li>Materialized Views</li>
+								<li>
+									<strong>Bronze Layer:</strong>
+									Raw data ingestion using Delta Lake with schema enforcement
+									and ingestion metadata.
+								</li>
+			
+								<li>
+									<strong>Silver Layer:</strong>
+									Data cleansing, business rules validation,
+									deduplication and quarantine process for inconsistent records.
+								</li>
+			
+								<li>
+									<strong>Gold Layer:</strong>
+									Dimensional modeling with fact and dimension tables
+									optimized for analytical consumption.
+								</li>
 							</ul>
-							<a class="btn btn-primary" href="https://github.com/felipeporfiriolima/databricks-sales-pipeline" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View project on GitHub</a>
-                        </div>                
-				    </div>
-                </div>
-            </section>
+			
+							<h4>Technical Implementations</h4>
+			
+							<ul>
+								<li>Databricks Workflows for pipeline orchestration</li>
+								<li>Apache Spark and PySpark transformations</li>
+								<li>Delta Lake tables and ACID transactions</li>
+								<li>Incremental data processing</li>
+								<li>Data Quality Framework</li>
+								<li>Quarantine Pattern for invalid records</li>
+								<li>Dimensional Modeling (Star Schema)</li>
+								<li>Delta Lake optimization using OPTIMIZE</li>
+								<li>Materialized Views for analytical workloads</li>
+							</ul>
+			
+							<h4>Technologies</h4>
+			
+							<p>
+								Databricks | Apache Spark | PySpark | Delta Lake |
+								SQL | Python | Delta Live Tables
+							</p>
+			
+							<a class="btn btn-primary"
+							href="https://github.com/felipeporfiriolima/databricks-sales-pipeline"
+							target="_blank"
+							rel="noopener noreferrer">
+			
+								<i class="fab fa-github"></i>
+								View project on GitHub
+			
+							</a>
+			
+						</div>
+					</div>
+			
+				</div>
+			</section>
             <hr class="m-0" />
             <!-- Awards-->
             <section class="resume-section" id="certifications">
