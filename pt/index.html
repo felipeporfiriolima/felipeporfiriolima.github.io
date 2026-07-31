@@ -141,88 +141,139 @@
 				</div>
 			</section>
             <!-- Projects-->
-<section class="resume-section" id="projects">
-    <div class="resume-section-content">
-
-        <h2 class="mb-5">Projetos</h2>
-
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-
-                <h3 class="mb-0">Databricks Sales Pipeline</h3>
-
-                <p>
-                    Projeto completo de Engenharia de Dados desenvolvido utilizando
-                    Databricks, Apache Spark e Delta Lake.
-
-                    A solução implementa uma arquitetura Medallion
-                    (camadas Bronze, Silver e Gold) para ingestão de dados,
-                    processamento, validação de qualidade, aplicação de regras
-                    de negócio e disponibilização de dados analíticos.
-                </p>
-
-
-                <h4>Arquitetura e Pipeline de Dados</h4>
-
-                <ul>
-                    <li>
-                        <strong>Camada Bronze:</strong>
-                        ingestão dos dados brutos utilizando Delta Lake,
-                        mantendo histórico e rastreabilidade das informações.
-                    </li>
-
-                    <li>
-                        <strong>Camada Silver:</strong>
-                        tratamento, padronização, validações de qualidade,
-                        aplicação de regras de negócio e processo de quarentena
-                        para dados inconsistentes.
-                    </li>
-
-                    <li>
-                        <strong>Camada Gold:</strong>
-                        modelagem dimensional utilizando tabelas fato e dimensão
-                        para consumo analítico.
-                    </li>
-                </ul>
-
-
-                <h4>Implementações Técnicas</h4>
-
-                <ul>
-                    <li>Arquitetura Medallion (Bronze, Silver e Gold)</li>
-                    <li>Armazenamento utilizando Delta Lake</li>
-                    <li>Processamento Incremental de Dados</li>
-                    <li>Framework de Qualidade de Dados</li>
-                    <li>Padrão de Quarentena para registros inconsistentes</li>
-                    <li>Modelagem Dimensional (Star Schema)</li>
-                    <li>Otimização de Tabelas Delta utilizando OPTIMIZE</li>
-                    <li>Materialized Views para consultas analíticas</li>
-                </ul>
-
-
-                <h4>Tecnologias Utilizadas</h4>
-
-                <p>
-                    Databricks | Apache Spark | PySpark | Delta Lake |
-                    SQL | Python | Delta Live Tables
-                </p>
-
-
-                <a class="btn btn-primary"
-                   href="https://github.com/felipeporfiriolima/databricks-sales-pipeline"
-                   target="_blank"
-                   rel="noopener noreferrer">
-
-                    <i class="fab fa-github"></i>
-                    Ver projeto no GitHub
-
-                </a>
-
-            </div>
-        </div>
-
-    </div>
-</section>
+			<section class="resume-section" id="projects">
+				<div class="resume-section-content">
+			
+					<h2 class="mb-5">Projetos</h2>
+			
+					<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+						<div class="flex-grow-1">
+			
+							<h3 class="mb-0">Databricks Sales Pipeline</h3>
+			
+							<p>
+								Projeto completo de Engenharia de Dados desenvolvido utilizando
+								Databricks, Apache Spark e Delta Lake.
+			
+								A solução implementa uma arquitetura Medallion
+								(camadas Bronze, Silver e Gold) para ingestão de dados,
+								processamento, validação de qualidade, aplicação de regras
+								de negócio e disponibilização de dados analíticos.
+							</p>
+			
+			
+							<h4>Arquitetura e Pipeline de Dados</h4>
+			
+							<ul>
+								<li>
+									<strong>Camada Bronze:</strong>
+									ingestão dos dados brutos utilizando Delta Lake,
+									mantendo histórico e rastreabilidade das informações.
+								</li>
+			
+								<li>
+									<strong>Camada Silver:</strong>
+									tratamento, padronização, validações de qualidade,
+									aplicação de regras de negócio e processo de quarentena
+									para dados inconsistentes.
+								</li>
+			
+								<li>
+									<strong>Camada Gold:</strong>
+									modelagem dimensional utilizando tabelas fato e dimensão
+									para consumo analítico.
+								</li>
+							</ul>
+			
+			
+							<h4>Implementações Técnicas</h4>
+			
+							<ul>
+								<li>Arquitetura Medallion (Bronze, Silver e Gold)</li>
+								<li>Armazenamento utilizando Delta Lake</li>
+								<li>Processamento Incremental de Dados</li>
+								<li>Framework de Qualidade de Dados</li>
+								<li>Padrão de Quarentena para registros inconsistentes</li>
+								<li>Modelagem Dimensional (Star Schema)</li>
+								<li>Otimização de Tabelas Delta utilizando OPTIMIZE</li>
+								<li>Materialized Views para consultas analíticas</li>
+							</ul>
+			
+			
+							<h4>Tecnologias Utilizadas</h4>
+			
+							<p>
+								Databricks | Apache Spark | PySpark | Delta Lake |
+								SQL | Python | Delta Live Tables
+							</p>
+			
+			
+							<a class="btn btn-primary"
+							href="https://github.com/felipeporfiriolima/databricks-sales-pipeline"
+							target="_blank"
+							rel="noopener noreferrer">
+			
+								<i class="fab fa-github"></i>
+								Ver projeto no GitHub
+			
+							</a>
+			
+						</div>
+					</div>
+					
+					<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+						<div class="flex-grow-1">
+							<h3 class="mb-0">Pipeline Vetorial para Análise de Ordens de Serviço</h3>
+					
+							<p>
+								Projeto desenvolvido em Python para ingestão, tratamento e indexação
+								de Ordens de Serviço em um banco vetorial utilizando ChromaDB.
+								A solução transforma informações operacionais em conhecimento
+								pesquisável por modelos de IA Generativa (LLMs), permitindo consultas
+								semânticas sobre históricos de atendimento, pareceres técnicos e
+								documentos anexos.
+							</p>
+												
+							<h4>Implementações Técnicas</h4>
+					
+							<ul>
+								<li>Extração de dados a partir do SQL Server</li>
+								<li>Processamento e padronização de Ordens de Serviço</li>
+								<li>Chunking semântico para documentos extensos</li>
+								<li>Geração de embeddings utilizando modelo multilingual-e5-base</li>
+								<li>Indexação vetorial utilizando ChromaDB</li>
+								<li>Metadados estruturados para filtros inteligentes</li>
+								<li>Processamento de anexos PDF, Word, Excel e CSV</li>
+								<li>Preparação da base para arquitetura RAG (Retrieval-Augmented Generation)</li>
+								<li>Pesquisa semântica para consumo por LLMs</li>
+							</ul>
+					
+							<h4>Arquitetura da Solução</h4>
+					
+							<p>
+								SQL Server → Python ETL → Chunking Semântico →
+								Embeddings → ChromaDB → LLM / RAG
+							</p>
+							
+							<h4>Tecnologias Utilizadas</h4>
+			
+							<p>
+								Python | ChromaDB | Embeddings | RAG | LLM | SQL Server 
+							</p>
+					
+							<a class="btn btn-primary"
+							href="LINK_GITHUB"
+							target="_blank"
+							rel="noopener noreferrer">
+								<i class="fab fa-github"></i>
+								Ver projeto no GitHub
+							</a>
+					
+						</div>
+					</div>
+			
+				</div>
+			</section>
             <hr class="m-0" />
             <!-- Awards-->
             <section class="resume-section" id="certifications">
