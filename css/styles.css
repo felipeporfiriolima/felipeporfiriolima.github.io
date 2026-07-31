@@ -10970,3 +10970,17 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+.language-switch {
+    font-size: 0.9rem;
+}
+
+.language-switch a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.language-switch span {
+    color: rgba(255,255,255,.6);
+    margin: 0 6px;
+}
